@@ -1,7 +1,7 @@
 # CertiCoq Test#2
 
 We're testing CertiCoq again, but this time with a little more complex extraction.
-We want to extract the definition needed to ```add 10``` to any introduced number. Thus, we give a definition ```n := n + 10```, and extract it using the CertiCoq plugin with ```CertiCoq Compile addn10```.
+We want to extract a function that adds 10 to any certain natural number. Thus, we define ```addn10``` as  ```Definition addn10 n := n + 10```, and extract it using the CertiCoq plugin with ```CertiCoq Compile addn10```.
 
 This generates the corresponding C code, glue and headers. We added a ```main()``` function inside the ```main.c```file.
 
@@ -13,7 +13,7 @@ clang -o test -fomit-frame-pointer gc_stack.c ctoy.addn10.c main.c
 
 When executing ```test``` we get a value from the body function but, since we could'nt specify to which number be wanted to add 10 we started doing some changes and tests on the ```main()```.
 
-In conclusion, we don't know if the body is adding 10 to some random data and we also dont know how to specify which number we want to add 10 to. In the other hand, we also tried to use the glue libraries and failed, so it would be great if you could explain us a little on how to use them or how they work.
+In short, we don't know if the body is adding 10 to some random data and we also dont know how to specify which number we want to add 10 to. In the other hand, we also tried to use the glue libraries and failed, so it would be great if you could explain us a little on how to use them or how they work.
 
 Since none of our approaches worked correctly we have decided to let the ```main.c``` file more or less clean so you could work with it.
 
