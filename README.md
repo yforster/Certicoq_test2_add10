@@ -17,7 +17,7 @@ In conclusion, we don't know if the body is adding 10 to some random data and we
 
 Since none of our approaches worked correctly we have decided to let the ```main.c``` file more or less clean so you could work with it.
 
-##A little explanation of some of the tests that we have done:
+## A little explanation of some of the tests that we have done:
 
 We tried using the ctoy.addn10.c functions in some different ways with the body function to see if we could add 10 to the number 1. This resulted sometimes in Segmentation fault errors, specifically when using this functions at any time:
 
