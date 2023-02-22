@@ -9,6 +9,7 @@ Compiled everything with:
 
 ```bash
 clang -o test -fomit-frame-pointer gc_stack.c ctoy.addn10.c main.c
+```
 
 When executing ```test``` we get a value from the body function but, since we could'nt specify to which number be wanted to add 10 we started doing some changes and tests on the ```main()```.
 
