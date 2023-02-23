@@ -1,4 +1,3 @@
-Require Import mathcomp.ssreflect.all_ssreflect.
 From CertiCoq.Plugin Require Import CertiCoq.
 
 Set Implicit Arguments.
